@@ -62,7 +62,6 @@ async def start_handler(message: types.Message):
                 break
             else:
                 w = "Подивись в вікно (якщо воно ще є)"
-
         await message.reply(f"{day_name} <em>{day_of_month}-{month}-{year}</em>:\n"
                             f"  В місті:  {city}\n"
                             f"  Температура:  {cur_waether}°C\n"
@@ -74,3 +73,5 @@ async def start_handler(message: types.Message):
                             f"{random.choice(best_of_luck)}")
     except:
         await message.reply("Місто вказано не правильно")
+
+
